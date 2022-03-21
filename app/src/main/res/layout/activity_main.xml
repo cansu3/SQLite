@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="277dp"
+        >
+
+        <EditText
+            android:id="@+id/et_isim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:hint="İsim"/>
+
+        <EditText
+            android:id="@+id/et_Soyisim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:hint="Soyisim"
+            android:layout_below="@id/et_isim"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/et_Adres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/et_Soyisim"
+            android:layout_marginTop="30dp"
+            android:inputType="textPersonName"
+            android:hint="Adres"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btn_Kaydet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_Adres"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Kaydet" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btn_Kaydet"
+            android:layout_marginTop="30dp"
+            android:id="@+id/lst_liste"/>
+
+        <Button
+            android:id="@+id/btn_Guncelle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_Adres"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="30dp"
+            android:text="Güncelle" />
+
+        <Button
+            android:id="@+id/btn_Sil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_Adres"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="30dp"
+            android:text="Sİl" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
